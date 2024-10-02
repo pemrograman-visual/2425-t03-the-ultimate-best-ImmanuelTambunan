@@ -62,7 +62,7 @@ public class T03 {
                 kategoribuku = "---";
             }
             System.out.println(kodeisbn + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
-        } while (!kodeisbn.equals("---"));
+        } while (kodeisbn.equals("---"));
     }
     
     private static String toFixed(double value, int digits) {
