@@ -26,7 +26,7 @@ public class T03 {
                     kategori = "---";
                 } else {
                     if (minimummargin < -(hargapembelian * 40 / 100)) {
-                        kategoridiskon = "Once in a LifeTime";
+                        kategori = "Once in a LifeTime";
                     } else {
                         if (minimummargin < -(hargapembelian * 20 / 100)) {
                             kategori = "Never Come Twice";

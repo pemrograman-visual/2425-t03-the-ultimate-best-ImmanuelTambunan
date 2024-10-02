@@ -4,10 +4,10 @@
         <attribute name="name" value="t01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 09:23:58 PM"/>
+        <attribute name="saved" value="2024-10-02 09:28:14 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0wNjsxMDo1NjoyOCBBTTsyNjIx"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0yNzsxMToxMDozNSBBTTs1OzI3MjU="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToyMzo1OCBQTTs3OzI3MjQ="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToyODoxNCBQTTs4OzI3MjI="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -34,7 +34,7 @@
                             <else>
                                 <if expression="minimummargin&lt;-(hargapembelian*40/100)">
                                     <then>
-                                        <assign variable="kategoridiskon" expression="&quot;Once in a LifeTime&quot;"/>
+                                        <assign variable="kategori" expression="&quot;Once in a LifeTime&quot;"/>
                                     </then>
                                     <else>
                                         <if expression="minimummargin&lt;-(hargapembelian*20/100)">
