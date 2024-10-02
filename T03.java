@@ -36,33 +36,33 @@ public class T03 {
                         }
                     }
                 }
-            }
-            stok = Integer.parseInt(input.nextLine());
-            rating = Double.parseDouble(input.nextLine());
-            if (rating >= 4.7) {
-                kategori = "Best Pick";
-            } else {
-                if (rating >= 4.5) {
-                    kategori = "Must Read";
+                stok = Integer.parseInt(input.nextLine());
+                rating = Double.parseDouble(input.nextLine());
+                if (rating >= 4.7) {
+                    kategori = "Best Pick";
                 } else {
-                    if (rating >= 4.0) {
-                        kategori = "Recommended";
+                    if (rating >= 4.5) {
+                        kategori = "Must Read";
                     } else {
-                        if (rating >= 3.0) {
-                            kategori = "Average";
+                        if (rating >= 4.0) {
+                            kategori = "Recommended";
                         } else {
-                            kategori = "Low";
+                            if (rating >= 3.0) {
+                                kategori = "Average";
+                            } else {
+                                kategori = "Low";
+                            }
                         }
                     }
                 }
+                if (kategori.equals("One in LifeTime") && kategori.equals("BestPick")) {
+                    kategoribuku = "The Ultimate Best";
+                } else {
+                    kategoribuku = "---";
+                }
+                System.out.println(kodeisbn + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
             }
-            if (kategori.equals("One in LifeTime") && kategori.equals("BestPick")) {
-                kategoribuku = "The Ultimate Best";
-            } else {
-                kategoribuku = "---";
-            }
-            System.out.println(kodeisbn + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
-        } while (kodeisbn.equals("---"));
+        } while (!kodeisbn.equals("---"));
     }
     
     private static String toFixed(double value, int digits) {
