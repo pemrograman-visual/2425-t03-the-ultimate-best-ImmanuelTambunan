@@ -4,15 +4,15 @@
         <attribute name="name" value="t01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 09:07:11 PM"/>
+        <attribute name="saved" value="2024-10-02 09:15:56 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0wNjsxMDo1NjoyOCBBTTsyNjIx"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0yNzsxMToxMDozNSBBTTs1OzI3MjU="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOTowNzoxMSBQTTs0OzI3MTI="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToxNTo1NiBQTTs1OzI3MjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="kodeisbn, judul, penulis, penerbit, formatbuku, kategori, kategoridiskon, kategoribuku" type="String" array="False" size=""/>
+            <declare name="kodeisbn, judul, penulis, penerbit, formatbuku, kategori, kategoribuku" type="String" array="False" size=""/>
             <declare name="stok" type="Integer" array="False" size=""/>
             <declare name="hargapembelian, minimummargin, rating, diskon, tahunterbit" type="Real" array="False" size=""/>
             <do expression="kodeisbn!=&quot;---&quot;">
@@ -27,23 +27,22 @@
                         <input variable="formatbuku"/>
                         <input variable="hargapembelian"/>
                         <input variable="minimummargin"/>
-                        <assign variable="diskon" expression="(minimummargin/hargapembelian)*(-1)"/>
-                        <if expression="diskon &gt;=40/100">
+                        <if expression="minimummargin &gt;=0">
                             <then>
-                                <assign variable="kategoridiskon" expression="&quot;Once in a LifeTime&quot;"/>
+                                <assign variable="kategori" expression="&quot;---&quot;"/>
                             </then>
                             <else>
-                                <if expression="diskon&gt;=20/100">
+                                <if expression="minimummargin&lt;-(hargapembelian*40/100)">
                                     <then>
-                                        <assign variable="kategoridiskon" expression="&quot;Never Come Twice&quot;"/>
+                                        <assign variable="kategoridiskon" expression="&quot;Once in a LifeTime&quot;"/>
                                     </then>
                                     <else>
-                                        <if expression="diskon&lt;=0">
+                                        <if expression="minimummargin&lt;-(hargapembelian*20/100)">
                                             <then>
-                                                <assign variable="kategoridiskon" expression="&quot;No Regret&quot;"/>
+                                                <assign variable="kategori" expression="&quot;Never Come Twice&quot;"/>
                                             </then>
                                             <else>
-                                                <assign variable="kategoridiskon" expression="&quot;---&quot;"/>
+                                                <assign variable="kategori" expression="&quot;No Regret&quot;"/>
                                             </else>
                                         </if>
                                     </else>

@@ -2,12 +2,14 @@
 // 12S24034 - Immanuel Tambunan
 import java.util.*;
 import java.lang.Math;
+import java.util.*;
+import java.lang.Math;
 
-public class T03 {
+public class JT03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String kodeisbn, judul, penulis, penerbit, formatbuku, kategori, kategoridiskon, kategoribuku;
+        String kodeisbn, judul, penulis, penerbit, formatbuku, kategori, kategoribuku;
         int stok;
         double hargapembelian, minimummargin, rating, diskon, tahunterbit;
 
@@ -22,17 +24,16 @@ public class T03 {
                 formatbuku = input.nextLine();
                 hargapembelian = Double.parseDouble(input.nextLine());
                 minimummargin = Double.parseDouble(input.nextLine());
-                diskon = minimummargin / hargapembelian * -1;
-                if (diskon >= (double) 40 / 100) {
-                    kategoridiskon = "Once in a LifeTime";
+                if (minimummargin >= 0) {
+                    kategori = "---";
                 } else {
-                    if (diskon >= (double) 20 / 100) {
-                        kategoridiskon = "Never Come Twice";
+                    if (minimummargin < -(hargapembelian * 40 / 100)) {
+                        kategoridiskon = "Once in a LifeTime";
                     } else {
-                        if (diskon <= 0) {
-                            kategoridiskon = "No Regret";
+                        if (minimummargin < -(hargapembelian * 20 / 100)) {
+                            kategori = "Never Come Twice";
                         } else {
-                            kategoridiskon = "---";
+                            kategori = "No Regret";
                         }
                     }
                 }
