@@ -4,10 +4,10 @@
         <attribute name="name" value="t01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 09:15:56 PM"/>
+        <attribute name="saved" value="2024-10-02 09:20:06 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0wNjsxMDo1NjoyOCBBTTsyNjIx"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0yNzsxMToxMDozNSBBTTs1OzI3MjU="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToxNTo1NiBQTTs1OzI3MjE="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToyMDowNiBQTTs2OzI3MTM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -88,7 +88,7 @@
                                 <assign variable="kategoribuku" expression="&quot;---&quot;"/>
                             </else>
                         </if>
-                        <output expression="kodeisbn&amp; &quot;|&quot; &amp;judul&amp; &quot;|&quot; &amp;penulis&amp; &quot;|&quot; &amp;tahunterbit&amp; &quot;|&quot; &amp;penerbit&amp; &quot;|&quot; &amp;formatbuku&amp; &quot;|&quot; &amp;hargapembelian&amp; &quot;|&quot; &amp;minimummargin&amp; &quot;|&quot; &amp;stok&amp; &quot;|&quot; &amp;tofixed(rating,1)&amp; &quot;|&quot;&amp;kategori&amp;&quot;|&quot;&amp;kategoridiskon&amp;&quot;|&quot;&amp;kategoribuku" newline="True"/>
+                        <output expression="kodeisbn&amp; &quot;|&quot; &amp;judul&amp; &quot;|&quot; &amp;penulis&amp; &quot;|&quot; &amp;tahunterbit&amp; &quot;|&quot; &amp;penerbit&amp; &quot;|&quot; &amp;formatbuku&amp; &quot;|&quot; &amp;hargapembelian&amp; &quot;|&quot; &amp;minimummargin&amp; &quot;|&quot; &amp;stok&amp; &quot;|&quot; &amp;tofixed(rating,1)&amp; &quot;|&quot;&amp;kategori&amp;&quot;|&quot;&amp;kategoribuku" newline="True"/>
                     </else>
                 </if>
             </do>

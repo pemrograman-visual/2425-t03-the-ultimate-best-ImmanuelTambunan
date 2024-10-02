@@ -2,10 +2,8 @@
 // 12S24034 - Immanuel Tambunan
 import java.util.*;
 import java.lang.Math;
-import java.util.*;
-import java.lang.Math;
 
-public class JT03 {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -61,7 +59,7 @@ public class JT03 {
                 } else {
                     kategoribuku = "---";
                 }
-                System.out.println(kodeisbn + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + kategoridiskon + "|" + kategoribuku);
+                System.out.println(kodeisbn + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + kategoribuku);
             }
         } while (!kodeisbn.equals("---"));
     }
