@@ -22,7 +22,7 @@ public class T03 {
                 formatbuku = input.nextLine();
                 hargapembelian = Double.parseDouble(input.nextLine());
                 minimummargin = Double.parseDouble(input.nextLine());
-                if (minimummargin >= 0) {
+                if (minimummargin > 0) {
                     kategori = "---";
                 } else {
                     if (minimummargin < -(hargapembelian * 40 / 100)) {

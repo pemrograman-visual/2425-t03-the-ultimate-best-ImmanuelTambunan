@@ -4,10 +4,10 @@
         <attribute name="name" value="t01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 09:20:06 PM"/>
+        <attribute name="saved" value="2024-10-02 09:23:58 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0wNjsxMDo1NjoyOCBBTTsyNjIx"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtQ0I4SzRBVDk7MjAyNC0wOS0yNzsxMToxMDozNSBBTTs1OzI3MjU="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToyMDowNiBQTTs2OzI3MTM="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQUMyUVI5MzI7MjAyNC0xMC0wMjswOToyMzo1OCBQTTs3OzI3MjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,7 +27,7 @@
                         <input variable="formatbuku"/>
                         <input variable="hargapembelian"/>
                         <input variable="minimummargin"/>
-                        <if expression="minimummargin &gt;=0">
+                        <if expression="minimummargin &gt;0">
                             <then>
                                 <assign variable="kategori" expression="&quot;---&quot;"/>
                             </then>
